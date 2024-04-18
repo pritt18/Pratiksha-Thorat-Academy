@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+:root {
+    --font-01: 'Poppins', sans-serif;
+    --font-02: 'Philosopher', sans-serif;
+
+    /* color  */
+    --global-color-0: #e41345;
+    --global-color-1: #f70077;
+    --global-color-2: #1a1a1a;
+    --global-color-3: #3e4359;
+    --global-color-4: #f7f7f7;
+    --global-color-5: #fff;
+    --global-color-6: #243673;
+    --global-color-7: #BFD1FF;
+
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    height: 86px;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999999999999999999999;
+}
+
+header .logo {
+    color: var(--global-color-1);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: xx-large;
+    font-family: var(--font-02);
+
+    text-shadow: .5px .5px 3px var(--global-color-1);
+    transition: .4s;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+}
+
+header ul {
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+header ul li a {
+    font-size: 1.1em;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #Fff;
+    display: flex;
+
+    justify-content: space-between;
+    font-weight:500;
+    transition: all .4s ease;
+}
+
+header ul li a:hover {
+    color: var(--global-color-0);
+}
+
+header ul li #NavNum {
+    border: 2px solid var(--global-color-0);
+    padding: 20px 35px;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 700;
+    color: #fff;
+}
+
+header ul li #NavNum:hover {
+    background-color: var(--global-color-0);
+}
+
+
+<!--session first>
+
+.sectionFirst {
+    padding: 12rem 0% 15rem;
+    position: relative;
+}
+
+.sectionFirst::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("trophy.jpg");
+    z-index: -1;
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionFirst h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: var(--font-02);
+}
+
+
+* responsive  */
+@media (max-width:1024px) {
+
+    header {
+        padding: 10px;
+        overflow-x: visible;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 88px;
+        left: 0;
+        display: none;
+    }
+
+    header.active nav {
+        display: block;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    header ul li a {
+        border: 1px solid #434343;
+        position: relative;
+        z-index: 3;
+        font-weight: 800;
+    }
+
+    header ul li a:hover {
+        color: var(--global-color-3);
+    }
+
+    header ul li a:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--global-color-1);
+        z-index: -1;
+        opacity: .8;
+    }
+
+    header ul li #NavNum {
+        width: fit-content;
+        display: none;
+    }
+
+
+
+}
+
+/* for sometime  */
+.sectionFirst {
+    padding: 9rem 0% 20rem;
+    position: relative;
+    color: var(--global-color-4);
+}
+
+.sectionFirst::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--global-color-2);
+    z-index: -1;
+    opacity: .7;
+}
+
+.sectionFirst::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("trophy.jpg");
+    z-index: -1;
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .sectionFirst .frontPage */
+.sectionFirst .frontPage {
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 60%;
+}
+
+.sectionFirst .frontPage .address {
+    color: var(--global-color-0);
+    font-size: 25px;
+    line-height: 1.2em;
+    font-family: var(--font-02);
+}
+
+.sectionFirst .frontPage .heading {
+    font-size: 3.24rem;
+    font-weight: 400;
+    font-family: var(--font-02);
+}
+
+/* .sectionFirst .frontPage .para {} */
+
+.sectionFirst .frontPage .btn {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.sectionFirst .frontPage .btn a {
+    border-radius: 7px;
+    padding: 17px 30px;
+    text-decoration: none;
+}
+
+.sectionFirst .frontPage .btn a:nth-child(1) {
+    border: 1px solid var(--global-color-0);
+    background-color: var(--global-color-0);
+    color: var(--global-color-4);
+    transition: all .4s ease;
+}
+
+.sectionFirst .frontPage .btn a:nth-child(1):hover {
+    border: 1px solid var(--global-color-1);
+    background-color: var(--global-color-1);
+}
+
+.sectionFirst .frontPage .btn a:nth-child(2) {
+    border: 1px solid var(--global-color-0);
+    background-color: var(--global-color-4);
+    color: var(--global-color-0);
+    transition: all .4s ease;
+}
+
+.sectionFirst .frontPage .btn a:nth-child(2):hover {
+    border: 1px solid var(--global-color-4);
+    background-color: var(--global-color-1);
+    color: var(--global-color-4);
+}
+
+
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.certificate {
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.certificate h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.certificate p {
+    font-style: italic;
+    color: #666;
+}

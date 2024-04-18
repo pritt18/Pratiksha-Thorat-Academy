@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Maven+Pro:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.nav-panel {
+    height: 60px;
+    display: flex;
+    background-color: rgb(97, 8, 78);
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+.Pratiksha-thorat-nav {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.links {
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.logo-sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.links a:hover {
+    border-radius: 15px;
+    border: 2px solid wheat;
+}
+
+.landing-image{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-image{
+    width: 100vw;
+}
+
+.img-content{
+
+    position: absolute;
+    color: aliceblue;
+    margin-left: 0px;
+
+}
+
+.h-text{
+    font-size: 7rem;
+}
+
+.button{
+    text-decoration: none;
+    background-color: rgb(97, 8, 78);
+    color: aliceblue;
+    border-radius: 10px;
+    /* border: 2px solid wheat; */
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.hero{
+    color: aliceblue;
+    background-image: url("../Assets/Images/makeup.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p{
+    font-size: 8rem;
+    border-radius: 12px;
+    background-color: rgb(97, 8, 78);
+    padding: 20px;
+}
+
+.sub-hero{
+    background-image: url("../Assets/Images/makeup_toolkits.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    
+}
+
+.boxes{
+    background-color: rgb(97, 8, 78);
+    border-radius: 15px;
+    height: 20vh;
+    width: 30vh;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.form-section{
+    position:inherit;
+    bottom: 0;
+    color: black;
+}
+
+
+footer{
+    height: 20vh;
+    background-color: rgb(97, 8, 78);
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#copyrightclaim{
+    padding: 10px;
+}
+
+.footer-link{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.top-links{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.top-links:hover{
+    border-radius: 15px;
+    border: 2px solid wheat;
+}
+
+/* @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  } */
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+    }
+    .navbar{
+        font-size: 0.8rem;
+        display: block;
+
+        margin-left: 0px;
+    }
+    .nav-panel{
+       margin-left: 0px;
+       width: max-content;
+    }
+    .Pratiksha-thorat-nav{
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .logo-sign-in{
+        margin-left: 0px;
+    }
+    .h-text{
+        font-size: 1rem;
+    }
+
+    .landing-image{
+        height: 50vh;
+    }
+    #landing-image{
+        height: inherit;
+    }
+
+    .img-content{
+        margin-top: 0px;
+        padding: 20px;
+    }
+    .sub-hero{
+        height: auto;
+    }
+    .sub-hero-content{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  }
